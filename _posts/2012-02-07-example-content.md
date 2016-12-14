@@ -59,7 +59,7 @@ static void Greetings(StringBuilder sb)
     sb = null;
     sb = new StringBuilder("Bah Humbug");
 }
-{% highlight %}
+{% endhighlight %}
 
 
 ## Lists
