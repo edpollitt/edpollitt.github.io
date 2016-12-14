@@ -11,9 +11,10 @@ url:                 http://edpollitt.github.io
 
 # Set to '' in case of hosting on GitHub pages,
 # i.e. `http://<username>.github.io`
-baseurl:             /
+baseurl:             ''
 
-title:               Blah
+title:               ed pollitt
+
 # Pagination
 paginate:            5
 paginate_path:       '/page-:num/'
@@ -52,7 +53,7 @@ author:
     Read my thoughts on [#software](http://qwtel.com/tag/software) and [#cryptoeconomics](http://qwtel.com/tag/cryptoeconomics).
 
   # Social media icons in sidebar
-  # Comment/uncommet to show/hide
+  # Comment/uncomment to show/hide
   # Icons appear in order, can be rearranged:
   social:
     facebook:        _username_
