@@ -45,7 +45,7 @@ adder(2, 6);
 // > 8
 ~~~
 
-{% syntax csharp %}
+{% highlight csharp %}
 static void Main()
 {
     var sb = new StringBuilder();
@@ -59,7 +59,7 @@ static void Greetings(StringBuilder sb)
     sb = null;
     sb = new StringBuilder("Bah Humbug");
 }
-{% endsyntax %}
+{% highlight %}
 
 
 ## Lists
