@@ -3,8 +3,6 @@ gems:
   - jekyll-sitemap
   - jekyll-paginate
 
-highlighter:      rouge
-  
 # Permalinks
 permalink:           pretty
 

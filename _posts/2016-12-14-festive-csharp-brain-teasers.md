@@ -5,6 +5,7 @@ date:   2016-12-14 08:12:45 +0100
 categories: stuff test
 ---
 
+~~~csharp
 static void Main()
 {
     var sb = new StringBuilder();
@@ -18,3 +19,4 @@ static void Greetings(StringBuilder sb)
     sb = null;
     sb = new StringBuilder("Bah Humbug");
 }
+~~~
