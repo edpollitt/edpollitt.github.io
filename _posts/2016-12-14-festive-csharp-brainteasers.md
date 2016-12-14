@@ -2,6 +2,7 @@
 layout: post
 title: 'Festive Brainteasers'
 tags: [C#] [Brainteasers]
+description:
 ---
 
 *On the first day of Christmas my true love gave to me...*
@@ -37,7 +38,8 @@ public static bool IsGreaterThan(this IComparable first, IComparable second)
 }
 ~~~
 ~~~csharp
-public static bool IsGreaterThan<T>(this T first, T second) where T : IComparable 
+public static bool IsGreaterThan<T>(this T first, T second)
+	where T : IComparable 
 {
     return first.CompareTo(second) > 0;
 }
@@ -55,7 +57,7 @@ public IEnumerable<char> Encode(string s)
     foreach (var c in s)
     {
         if (!Char.IsLetterOrDigit(c))
-            throw new InvalidOperationException(string.Format("Cannot encode char '{0}'", c));
+            throw new InvalidOperationException($"Cannot encode char '{c}'"));
                   
         yield return (char)(c * 17 % 101);
     }
