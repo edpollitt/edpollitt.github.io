@@ -45,6 +45,23 @@ adder(2, 6);
 // > 8
 ~~~
 
+{% syntax csharp %}
+static void Main()
+{
+    var sb = new StringBuilder();
+    Greetings(sb);
+    Console.WriteLine(sb.ToString());
+}
+
+static void Greetings(StringBuilder sb)
+{
+    sb.Append("Merry Christmas");
+    sb = null;
+    sb = new StringBuilder("Bah Humbug");
+}
+{% endsyntax %}
+
+
 ## Lists
 
 Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
