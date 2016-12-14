@@ -1,8 +1,7 @@
 ---
 layout: post
 title: 'Festive Brainteasers'
-tags: [C#] [Brainteasers]
-description:
+tags: [csharp]
 ---
 
 *On the first day of Christmas my true love gave to me...*
