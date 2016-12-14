@@ -61,7 +61,7 @@ static void Greetings(StringBuilder sb)
 }
 {% endhighlight %}
 
-~~~js
+~~~csharp
 static void Main()
 {
     var sb = new StringBuilder();
