@@ -1,12 +1,12 @@
 ---
 layout: page
 title: About
-sitemap:
-  exclude: 'yes'
 ---
 
-<p class="message">
-  Hey there! Thanks for visitng this blog
-</p>
+{% comment %}
+  This inserts the "about" photo and text from `_config.yml`.
+  You can edit it there (jekyll needs restart!) or remove it and provide your own photo/text.
+{% endcomment %}
+{% include about-short.html author=site.author %}
 
-Thanks for reading!
+[write something about self]
