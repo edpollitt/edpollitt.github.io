@@ -1,12 +1,12 @@
 ---
 layout: post
-title:   Festive Brainteasers
+title: 'Festive Brainteasers'
 tags: [C#] [Brainteasers]
 ---
 
 *On the first day of Christmas my true love gave to me...*
 
-A festive message. What’s the output?
+**A festive message. What’s the output?**
 
 ~~~csharp
 static void Main()
@@ -24,9 +24,11 @@ static void Greetings(StringBuilder sb)
 }
 ~~~
 
+
+
 *On the second day of Christmas my true love gave to me...*
 
-A pair of extension methods. Are they equivalent? What’s the difference?
+**A pair of extension methods. Are they equivalent? What’s the difference?**
 
 ~~~csharp
 public static bool IsGreaterThan(this IComparable first, IComparable second) 
@@ -42,9 +44,10 @@ public static bool IsGreaterThan<T>(this T first, T second) where T : IComparabl
 ~~~
 
 
+
 *On the third day of Christmas my true love gave to me...*
 
-A unit test. Does it pass?
+**A unit test. Does it pass?**
 
 ~~~csharp
 public IEnumerable<char> Encode(string s)
@@ -67,9 +70,11 @@ void Should_throw_on_non_alphanumeric_characters()
 }
 ~~~
 
+
+
 *On the fourth day of Christmas my true love gave to me...*
 
-Seasonal greetings. What’s the output?
+**Seasonal greetings. What’s the output?**
 
 ~~~csharp
 var a = "Merry Christmas";
@@ -84,9 +89,11 @@ Console.WriteLine(a == x);
 Console.WriteLine(b == y);
 ~~~
 
+
+
 *On the fifth day of Christmas my true love gave to me...*
 
-A warped counter. What’s the output?
+**A warped counter. What’s the output?**
 
 ~~~csharp
 struct Counter
@@ -113,9 +120,11 @@ void Main()
 }
 ~~~
 
+
+
 *On the sixth day of Christmas my true love gave to me...*
 
-A broken sum. What’s the output?
+**A broken sum. What’s the output?**
 
 ~~~csharp
 var floats = new[] { 10.99f, 6.01f, 1.5f };    
@@ -123,9 +132,11 @@ var sum = floats.Cast<int>().Sum();
 Console.WriteLine(sum);
 ~~~
 
+
+
 *On the seventh day of Christmas my true love gave to me...*
 
-A convoluted inheritance hierarchy. What’s the output?
+**A convoluted inheritance hierarchy. What’s the output?**
 
 ~~~csharp
 void Main()
@@ -165,6 +176,7 @@ class E : B
 ~~~
 
 
+
 *On the eighth day of Christmas my true love gave to me...*
 
-Actually, that's all I can think of for now. Hopefully I'll complete the list sometime.
+**Actually, that's all I can think of for now. Hopefully I'll come back and complete the list sometime.**
