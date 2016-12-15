@@ -117,7 +117,7 @@ void Main()
     Console.WriteLine(b);
     Console.WriteLine(c);
     Console.WriteLine(d);
-	Console.WriteLine(a);
+    Console.WriteLine(a);
 }
 ~~~
 
