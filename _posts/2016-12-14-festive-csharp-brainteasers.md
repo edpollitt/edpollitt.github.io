@@ -93,7 +93,8 @@ Console.WriteLine(b == y);
 
 
 *On the fifth day of Christmas my true love gave to me...*
-**A broken type comparison. Can you make the following method return false?**
+
+**A broken type comparison. Can you make the method return false?**
 
 ~~~csharp
 bool Foo<T>() where T : new()
@@ -104,6 +105,7 @@ bool Foo<T>() where T : new()
 ~~~
 
 *On the sixth day of Christmas my true love gave to me...*
+
 **A warped counter. What’s the output?**
 
 ~~~csharp
@@ -135,7 +137,7 @@ void Main()
 
 *On the seventh day of Christmas my true love gave to me...*
 
-**A broken sum. What’s the output?**
+**A faulty sum. What’s the output?**
 
 ~~~csharp
 var floats = new[] { 10.99f, 6.01f, 1.5f };    
@@ -146,6 +148,7 @@ Console.WriteLine(sum);
 
 
 *On the eighth day of Christmas my true love gave to me...*
+
 **A nullable bool. What's the output?**
 
 ~~~csharp
