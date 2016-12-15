@@ -51,6 +51,14 @@ public static bool IsGreaterThan<T>(this T first, T second)
 **A unit test. Does it pass?**
 
 ~~~csharp
+[Test]
+void Should_throw_on_non_alphanumeric_characters()
+{
+    Action encoding = () => Encode("Merry Christmas!!");
+    encoding.ShouldThrow<InvalidOperationException>();
+}
+~~~
+~~~csharp
 public IEnumerable<char> Encode(string s)
 {
     foreach (var c in s)
@@ -60,14 +68,6 @@ public IEnumerable<char> Encode(string s)
                   
         yield return (char)(c * 17 % 101);
     }
-}
-~~~
-~~~csharp
-[Test]
-void Should_throw_on_non_alphanumeric_characters()
-{
-    Action encoding = () => Encode("Merry Christmas!!");
-    encoding.ShouldThrow<InvalidOperationException>();
 }
 ~~~
 
@@ -137,6 +137,19 @@ Console.WriteLine(sum);
 
 *On the seventh day of Christmas my true love gave to me...*
 
+**A type comparison. Can you make the following method return false?**
+
+~~~csharp
+bool Foo<T>() where T : new()
+{
+    var t = new T();
+    return t is T;
+}
+~~~
+
+
+*On the eighth day of Christmas my true love gave to me...*
+
 **A convoluted inheritance hierarchy. What’s the output?**
 
 ~~~csharp
@@ -178,6 +191,6 @@ class E : B
 
 
 
-*On the eighth day of Christmas my true love gave to me...*
+*On the ninth day of Christmas my true love gave to me...*
 
-**Actually, that's all I can think of for now. Hopefully I'll come back and complete the list sometime.**
+**Actually, that's all I can come up with for now. I'll come back and complete the list if I think of more.**
