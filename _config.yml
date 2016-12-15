@@ -21,13 +21,13 @@ paginate_path:       '/page-:num/'
 
 # Markdown enabled, however don't use more than one paragraph (enforced by `>`)
 description:         >
-  A place where I put some stuff I might need someday
+  A place where I sometimes put some stuff I might need someday
 
 # The tags listed as entries in the sidebar
 #sidebar_tags:        [jekyll, hyde]
 
 # Fallback image and color if not overwritten for tag or post
-image:               /hydejack/public/img/nap.jpg
+image:               /public/img/nap.jpg
 color:               '#A85641'
 
 # Fonts
