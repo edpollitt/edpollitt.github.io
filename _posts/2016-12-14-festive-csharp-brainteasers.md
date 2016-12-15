@@ -93,7 +93,17 @@ Console.WriteLine(b == y);
 
 
 *On the fifth day of Christmas my true love gave to me...*
+**A broken type comparison. Can you make the following method return false?**
 
+~~~csharp
+bool Foo<T>() where T : new()
+{
+    var t = new T();
+    return t is T;
+}
+~~~
+
+*On the sixth day of Christmas my true love gave to me...*
 **A warped counter. What’s the output?**
 
 ~~~csharp
@@ -123,7 +133,7 @@ void Main()
 
 
 
-*On the sixth day of Christmas my true love gave to me...*
+*On the seventh day of Christmas my true love gave to me...*
 
 **A broken sum. What’s the output?**
 
@@ -135,20 +145,21 @@ Console.WriteLine(sum);
 
 
 
-*On the seventh day of Christmas my true love gave to me...*
-
-**A type comparison. Can you make the following method return false?**
+*On the eighth day of Christmas my true love gave to me...*
+**A nullable bool. What's the output?**
 
 ~~~csharp
-bool Foo<T>() where T : new()
-{
-    var t = new T();
-    return t is T;
-}
+var b = new bool?();
+
+Console.WriteLine(b.ToString());
+Console.WriteLine(b.GetHashCode());
+Console.WriteLine(b.Equals(b));
+Console.WriteLine(b.GetType());
 ~~~
 
 
-*On the eighth day of Christmas my true love gave to me...*
+
+*On the ninth day of Christmas my true love gave to me...*
 
 **A convoluted inheritance hierarchy. What’s the output?**
 
@@ -188,7 +199,6 @@ class E : B
     public override string ToString() { return Name; }
 }
 ~~~
-
 
 
 *On the ninth day of Christmas my true love gave to me...*
