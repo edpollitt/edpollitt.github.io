@@ -28,7 +28,7 @@ description:         >
 
 # Fallback image and color if not overwritten for tag or post
 image:               /public/img/goddards.jpg
-color:               '#653817'
+color:               '#A85641'
 
 # Fonts
 font:                'Georgia, serif'
