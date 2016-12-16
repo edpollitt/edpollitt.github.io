@@ -94,7 +94,7 @@ Console.WriteLine(b == y);
 
 *On the fifth day of Christmas my true love gave to me...*
 
-**A broken type comparison. Can you make the method return false?**
+**A suspicious type comparison. Can you make the method return false?**
 
 ~~~csharp
 bool Foo<T>() where T : new()
@@ -137,7 +137,7 @@ void Main()
 
 *On the seventh day of Christmas my true love gave to me...*
 
-**A faulty sum. What’s the output?**
+**A broken sum. What’s the output?**
 
 ~~~csharp
 var floats = new[] { 10.99f, 6.01f, 1.5f };    
