@@ -27,7 +27,7 @@ description:         >
 #sidebar_tags:        [jekyll, hyde]
 
 # Fallback image and color if not overwritten for tag or post
-image:               /public/img/berlin.jpg
+image:               /public/img/goddards.jpg
 color:               '#A85641'
 
 # Fonts
@@ -39,16 +39,12 @@ author:
   name:              'Ed Pollitt'
 
   # This photo will be used in the about section
-  photo:             http://qwtel.com/public/img/flo.jpg
-  photo2x:           http://qwtel.com/public/img/flo@2x.jpg
+  #photo:             http://qwtel.com/public/img/flo.jpg
+  #photo2x:           http://qwtel.com/public/img/flo@2x.jpg
 
   # Markdown enabled, can use multiple paragraphs (enabled by `|`)
   about:             |
-    Hi, I'm Florian or [`@qwtel`](https://www.twitter.com/qwtel), which isn't an acronym,
-    I just [wanted a short username](http://qwtel.com/how-to-find-a-short-username) and that one happened to be available.
-
-    Read my thoughts on [#software](http://qwtel.com/tag/software) and [#cryptoeconomics](http://qwtel.com/tag/cryptoeconomics).
-
+    
   # Social media icons in sidebar
   # Comment/uncomment to show/hide
   # Icons appear in order, can be rearranged:
