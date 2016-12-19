@@ -25,7 +25,7 @@ sealed class AsyncFileSystemWatcher : IDisposable
     {
         if (string.IsNullOrWhiteSpace(fileName))
             throw new ArgumentException(
-			    "Cannot be null or whitespace.", nameof(fileName));
+                "Cannot be null or whitespace.", nameof(fileName));
        
         var taskSource = new TaskCompletionSource<bool>();
 
