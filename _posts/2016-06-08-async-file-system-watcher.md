@@ -15,8 +15,8 @@ sealed class AsyncFileSystemWatcher : IDisposable
     public AsyncFileSystemWatcher(string directoryPath)
     {
         _fileSystemWatcher = new FileSystemWatcher(directoryPath) 
-		{ 
-		    EnableRaisingEvents = true 
+        { 
+            EnableRaisingEvents = true 
         };
         _directoryPath = directoryPath;
     }
