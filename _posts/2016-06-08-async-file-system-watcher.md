@@ -24,7 +24,8 @@ sealed class AsyncFileSystemWatcher : IDisposable
     public Task WaitForFileCreationAsync(string fileName)
     {
         if (string.IsNullOrWhiteSpace(fileName))
-            throw new ArgumentException("Cannot be null or whitespace.", nameof(fileName));
+            throw new ArgumentException(
+			    "Cannot be null or whitespace.", nameof(fileName));
        
         var taskSource = new TaskCompletionSource<bool>();
 
