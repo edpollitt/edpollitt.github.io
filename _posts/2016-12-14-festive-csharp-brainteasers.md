@@ -94,6 +94,18 @@ Console.WriteLine(b == y);
 
 *On the fifth day of Christmas my true love gave to me...*
 
+**A misbehaving equals. The test passes - can you fill in the missing value?**
+
+~~~csharp
+var x = ???
+var y = x;
+Assert.That(x == y, Is.False);
+~~~
+
+
+
+*On the sixth day of Christmas my true love gave to me...*
+
 **A suspicious type comparison. Can you make the method return false?**
 
 ~~~csharp
@@ -104,17 +116,6 @@ bool Foo<T>() where T : new()
 }
 ~~~
 
-
-
-*On the sixth day of Christmas my true love gave to me...*
-
-**A misbehaving equals. The test passes - fill in the missing value.
-
-~~~csharp
-var x = ???
-var y = x;
-Assert.That(x == y, Is.False);
-~~~
 
 
 *On the seventh day of Christmas my true love gave to me...*
