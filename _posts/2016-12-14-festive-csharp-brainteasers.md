@@ -104,7 +104,20 @@ bool Foo<T>() where T : new()
 }
 ~~~
 
+
+
 *On the sixth day of Christmas my true love gave to me...*
+
+**A misbehaving equals. The test passes - fill in the missing value.
+
+~~~csharp
+var x = ???
+var y = x;
+Assert.That(x == y, Is.False);
+~~~
+
+
+*On the seventh day of Christmas my true love gave to me...*
 
 **A warped counter. What’s the output?**
 
@@ -135,7 +148,7 @@ void Main()
 
 
 
-*On the seventh day of Christmas my true love gave to me...*
+*On the eighth day of Christmas my true love gave to me...*
 
 **A broken sum. What’s the output?**
 
@@ -147,7 +160,7 @@ Console.WriteLine(sum);
 
 
 
-*On the eighth day of Christmas my true love gave to me...*
+*On the ninth day of Christmas my true love gave to me...*
 
 **A nullable bool. What's the output?**
 
@@ -161,8 +174,35 @@ Console.WriteLine(b.GetType());
 ~~~
 
 
+*On the tenth day of Christmas my true love gave to me...*
 
-*On the ninth day of Christmas my true love gave to me...*
+**Overridden default parameters. What's the output?**
+
+~~~csharp
+void Main()
+{
+    Foo f = new Bar();
+    f.Print();
+}
+
+class Foo
+{
+    public virtual void Print(string s = "Foo")
+    {
+        Console.WriteLine("Foo" + s);
+    }
+}
+
+class Bar : Foo
+{
+    public override void Print(string s = "Bar")
+    {
+        Console.WriteLine("Bar" + s);
+    }
+}
+~~~
+
+*On the eleventh day of Christmas my true love gave to me...*
 
 **A convoluted inheritance hierarchy. What’s the output?**
 
@@ -204,6 +244,6 @@ class E : B
 ~~~
 
 
-*On the tenth day of Christmas my true love gave to me...*
+*On the twelfth day of Christmas my true love gave to me...*
 
-**Actually, that's all I can come up with for now. I'll come back and complete the list if I think of more.**
+**Actually, that's all I can come up with for now. I'll come back and complete the list if I can think of the last one.**
